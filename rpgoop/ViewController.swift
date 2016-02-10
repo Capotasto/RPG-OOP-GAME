@@ -40,6 +40,7 @@ class ViewController: UIViewController {
         } else {
             enemy = DevilWizard(startingHp: 60, attackPwr: 15)
         }
+        printLbl.text = "Encountered in \(enemy.type)"
         enemyHpLbl.text = "\(String(enemy.hp)) HP"
         enemyImg.hidden = false
     }
